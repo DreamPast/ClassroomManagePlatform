@@ -1,11 +1,9 @@
-
 <script setup lang="ts">
 import TeachingBuilding from '@/components/TeachingBuilding.vue';
 </script>
 
 <template>
-    <TeachingBuilding></TeachingBuilding>
+  <TeachingBuilding></TeachingBuilding>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

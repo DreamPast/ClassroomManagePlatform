@@ -1,5 +1,5 @@
 <template>
-  <ElDialog :show-close="true" v-model="showModel" width="600px" top="30vh">
+  <ElDialog :show-close="true" v-model="showModal" width="600px" top="30vh">
     <ElText
       style="
         font-size: 32px;
@@ -39,7 +39,7 @@
 </template>
 
 <script setup lang="tsx">
-import { APIError, GetErrorMessage } from '@/apis/request';
+import { GetErrorMessage } from '@/apis/request';
 import { apiUserLogin } from '@/apis/user';
 import {
   ElButton,
@@ -54,7 +54,8 @@ import {
 } from 'element-plus';
 import { reactive, ref } from 'vue';
 
-const showModel = defineModel<boolean>();
+const showModal = defineModel<boolean>();
+
 const loginData = reactive<{
   UserId: string;
   Password: string;
