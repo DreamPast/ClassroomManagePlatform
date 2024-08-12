@@ -12,6 +12,7 @@
           <ElMenuItem index="faculty">学院</ElMenuItem>
           <ElMenuItem index="subject">专业</ElMenuItem>
           <ElMenuItem index="teacher">教师</ElMenuItem>
+          <ElMenuItem index="course">课程</ElMenuItem>
 
           <ElMenuItem style="margin-left: auto" v-if="!crName" @click="handleLogin"
             >登录</ElMenuItem

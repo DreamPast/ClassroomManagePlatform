@@ -14,6 +14,10 @@ const router = createRouter({
       component: () => import('./pages/ClassroomPage.vue'),
     },
     {
+      path: '/course',
+      component: () => import('./pages/CoursePage.vue'),
+    },
+    {
       path: '/faculty',
       component: () => import('./pages/FacultyListPage.vue'),
     },
